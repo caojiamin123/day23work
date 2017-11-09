@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>work15操作className</title>
+		<style type="text/css">
+			.div{ 
+				width: 100px;
+				height: 100px;
+				background-color: red;
+			}
+			.border{
+				border: 5px solid green;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="div"></div>
+	</body>
+	<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(function(){
+			$(".div").addClass("border");
+		})
+	</script>
+</html>

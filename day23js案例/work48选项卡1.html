@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>work48选项卡1</title>
+		<style type="text/css">
+			#wrap{
+				width: 400px;
+				height: 300px;
+				margin: 100px auto;
+			}
+			#wrap div{
+				width: 400px;
+				height: 300px;
+				border: 2px solid #333;
+				line-height: 300px;
+				text-align: center;
+				font-size: 50px;
+				display: none;
+			}
+			#wrap .active{
+				background: red;
+				color: #fff;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="wrap">
+			<input type="button" value="按钮1" class="active"/>
+			<input type="button" value="按钮2" />
+			<input type="button" value="按钮3" />
+			<div style="display:block;">div1</div>
+			<div>div2</div>
+			<div>div3</div>
+		</div>
+	</body>
+	<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(function(){
+			var abtn=$("input");
+			var adiv=$("#wrap div");
+			
+			abtn.click(function(){
+				abtn.removeClass("active");
+				adiv.hide();
+				$(this).addClass("active");
+				adiv.eq($(this).index()).show();
+			})
+		})
+	</script>
+</html>

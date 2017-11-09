@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>work41事件对象3</title>
+		<style type="text/css">
+			#div1{
+				width: 300px;
+				height: 300px;
+			}
+			#div2{
+				width: 200px;
+				height: 200px;
+			}
+			#div3{
+				width: 100px;
+				height: 100px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="div1" style="background: red;">
+			<div id="div2" style="background:green;">
+				<div id="div3" style="background:blue;"></div>
+			</div>
+		</div>
+	</body>
+	<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(function(){
+			$("#div3").click(function(){
+				alert($("#div3").css("width"));
+				return false;
+			})
+			$("#div2").click(function(){
+				alert($("#div2").css("width"));
+				return false;
+			})
+			$("#div1").click(function(){
+				alert($("#div1").css("width"));
+				return false;
+			})
+		})
+	</script>
+</html>

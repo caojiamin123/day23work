@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>work59选择器10</title>
+	</head>
+	<body>
+		<div>
+			我是一个p标签;
+		</div>
+		<div>
+			<p>我也是一个标签;</p>
+		</div>
+	</body>
+	<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(function(){
+			$("div:has(p)").css('background','red');
+		})
+	</script>
+</html>

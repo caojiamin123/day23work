@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>work13index</title>
+	</head>
+	<body>
+		<input type="button" value="按钮1"/>
+		<input type="button" value="按钮2"/>
+		<input type="button" value="按钮3"/>
+	</body>
+	<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(function(){
+			var abtn=$("input");
+			
+			abtn.click(function(){
+				alert($(this).index())
+			})
+		})
+	</script>
+</html>

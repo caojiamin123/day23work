@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>work60选择器11</title>
+	</head>
+	<body>
+		<input type="button" value="按钮"><br/>
+		<input type="text" name="" id=""><br/>
+		<input type="button" value="按钮"><br/>
+		<input type="checkbox" name="" id=""><br/>
+		<input type="button" value="按钮"><br/>
+		<input type="password" name="" id=""><br/>
+		<input type="button" value="按钮"><br/>
+		<input type="radio" name="" id="">
+	</body>
+	<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('input[type="button"]').css('background','red');
+			$('input[type="text"]').css('background','green');
+			$('input[type="password"]').css('background','yellow');
+		})
+	</script>
+</html>

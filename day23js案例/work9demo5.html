@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>work9demo5</title>
+		<style type="text/css">
+			#div{
+				width: 200px;
+				height: 200px;
+				background-color: red ;
+				display:none;
+			}
+		</style>
+	</head>
+	<body>
+		<input type="button" id="btn" value="点击" />
+		<div id="div"></div>
+	</body>
+	<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(function(){
+			var obtn=$("#btn");
+			var odiv=$("#div");
+			
+			obtn.click(function(){
+				odiv.slideDown();
+			})
+		}) 
+	</script>
+</html>

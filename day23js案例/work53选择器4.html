@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>work53选择器4</title>
+	</head>
+	<body>
+		<div class="red">
+			<ul>
+				<li><input type="button" value="按钮"></li>
+				<li><input type="button" value="按钮"></li>
+				<li><input type="button" value="按钮"></li>
+				<li><input type="button" value="按钮"></li>
+			</ul>
+		</div>
+		<ul>
+			<li><input type="button" value="按钮"></li>
+			<li><input type="button" value="按钮"></li>
+			<li><input type="button" value="按钮"></li>
+			<li><input type="button" value="按钮"></li>
+			<li><input type="button" value="按钮"></li>
+			<li><input type="button" value="按钮"></li>
+		</ul>
+	</body>
+	<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(function(){
+			var ainput=$(".red ul li input");
+			//alert(ainput.length);    //4
+			ainput.css('background','red');
+		})
+	</script>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>work32简易留言板</title>
+	</head>
+	<body>
+		<input type="text" id="txt" value="" />
+		<input type="button" id="btn" value="添加" />
+		<ul id="box">
+			<li>111<a href="javascript:;">删除</a></li>
+		</ul>
+	</body>
+	<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(function(){
+			var otxt=$("#txt");
+			
+			$("#btn").click(function(){
+				var oli=$('<li>'+otxt.val()+'<a href="javascript:;">删除</a></li>');
+				oli.appendTo("#box");
+				otxt.val('');
+			})
+		})
+	</script>
+</html>

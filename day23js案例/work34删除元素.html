@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>work34删除元素</title>
+	</head>
+	<body>
+		<input type="button" id="btn" value="点击" />
+		<div id="wrap">
+			<h3>我是一个h3</h3>
+		</div>
+	</body>
+	<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(function(){
+			
+			$("#btn").click(function(){
+				$("#wrap h3").remove();
+			})
+			
+		})
+	</script>
+</html>
